@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "clever-cyclist-340208",
+  "private_key_id": "32df230c70112801722364a1c73459c5114df525",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCuuXYd3e94GdMZ\ndNlwxVnN55aZnasudS8foQtwWF9mAl5XVQoFrQQkZs+vpmDr/9pTTK0b9LsuzU21\ntLSzTCMZhwy6kwniBPxqQL0oBTKubVJ5ir17Us9OaCqFmHZOaS6BBuUJZKgChwCG\nuQ5IJsbdEfyCd+fnAZQfc6i4yqEYmroAjXWtKYQu/CqMR5dXpolLWdRLBYgwUhBs\nGFvqncNVxtfTFsjjbebZsaP44/AZ/6bjQQ7cJnZiX+nrukmBE9R0Eh8C0aOywL69\n2zBNW5LFVHPOe5/8q5XHojnimHAYw7sGTb6G7fEWI1IPOS0OJpSZjnKTsUlFO1Ku\nyfBR3ZwtAgMBAAECggEAJ0eL2YaLf5NErSAjAvJm8D58UZALy/+tpp1oiirf1Xm6\nVkVIocKF4B4Z2hncB6om3Zuq/hIsY4bljbAwgG9hI6vD7YzBR8XJriRcMetLO8HZ\nbPgHBXq2HqEV0B9Yl2OXgAu6ATzW9Wx+rorbPlazVb8lpnoI0Rq+fzyb5WEuSq6c\nJ57nVtzluAfuNBH8HkTHO/T1O17vcv1LgXaDy1i45GaxlQZ7dt0yWNt+wKMQOhCZ\nBkxyaQ+9zEPcIwjHfUSzhSIDmEzGYnx3brjJyhWhId/gpkVIwIWBwc+4Jg+1ul6m\nIvcP6qQw4c73zmH4wdE6PG0J/6eKQTptBAuPxUHFMQKBgQDx22muNVdIr3fo6owS\nULCqt1NZrTnMdYm06qMqJ3k9wBrKjeGM8BnBzblw20QIgSa8Q4W9dJLc2Uyg2xG1\nbs7CAIskhur3FXjHCpt5bjQsZjAB4hSvJNlA1p5oFprAN6pmbhtegKqWAitU92nZ\n9LGsMbje3fyDqzIZTs8BScsfEQKBgQC48ROwo/beGc9XWw3AQ95HEAypUz0BCcFQ\n6An8hXRVMPhNBssfBc8rX/mUQaSrAGV0IwJ7ESOAyto+KMpY/A5Z4ZRsWrLM5NG+\ntqM808Y1rj2VNN03b2BXtRUTAdYVNnjZRM2cgFNFf1gfMgHtxcezsr2Gqn5rBIhd\nxenHSJQjXQKBgQDOt5mxM5hB4PAdXPOR5/PIRl7wZBXlwoSL5IzHR+vhsqNzgydI\nPiPVuQ+J/W890Z2ZBiF2V//60aQkTHnrWCVSPgKvmr2TqH+NqGxQsrfXRxQ7V9AU\nDuu99nJ4RvHH3ww+9ldgQ5sKEhqVSc7oYrPFmM4JdzUQGS/935Ug5cC98QKBgGts\n/Xb5hwh0DZA8f7xSr+avV+tzQlg8BmKspkBcdLqXe2OispIOmcwkL6ECkFgUHtpb\nC7HYvrqtGiBJKWCO6PckpUZbWMjTkVIqXJ+Uk+nSkEr/LhBpTZkkwl0MEAK6ZXAv\nGw/xKm2QDuvv7FblL58eECENH+mh9GQj9iuf6QyxAoGABtoYCKEDbL3EAjogC60e\n//p+PUyfMcovZHx6Iwug4DlZjzQXgV9j+t9b+HuuJBxJdUT6GysksGX/mKEJzS83\n/gtDpRHFkXV5ezP3lgCQJMt9aq8gsXfuw19O+wnRL/y6jclLg9TMs6GkKPi3xnhD\neVbhsWtAYz9zn6beK0wMtwg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-2c857@clever-cyclist-340208.iam.gserviceaccount.com",
+  "client_id": "115471710557405025357",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-2c857%40clever-cyclist-340208.iam.gserviceaccount.com"
+}
