@@ -57,6 +57,7 @@ class WebController extends Controller
                 /*->whereJsonContains('category_ids', ["id" => (string)$data['id']])*/
                 ->inRandomOrder()->take(12)->get();
         });
+        $sub_category = Category::where(['position'=>1])->take(6)->get();
         //products based on top seller
         $top_sellers = Seller::approved()->with('shop')
             ->withCount(['orders'])->orderBy('orders_count', 'DESC')->take(15)->get();
@@ -104,7 +105,7 @@ class WebController extends Controller
 
         $deal_of_the_day = DealOfTheDay::join('products', 'products.id', '=', 'deal_of_the_days.product_id')->select('deal_of_the_days.*', 'products.unit_price')->where('deal_of_the_days.status', 1)->first();
 
-        return view('web-views.home', compact('featured_products', 'topRated', 'bestSellProduct', 'latest_products', 'categories', 'brands', 'deal_of_the_day', 'top_sellers', 'home_categories'));
+        return view('web-views.home', compact('sub_category' , 'featured_products', 'topRated', 'bestSellProduct', 'latest_products', 'categories', 'brands', 'deal_of_the_day', 'top_sellers', 'home_categories'));
     }
 
     public function flash_deals($id)
@@ -812,7 +813,7 @@ class WebController extends Controller
             'message' => 'required',
             'g-recaptcha-response' => 'required',
         ]);
-        
+
          //recaptcha validation
         $recaptcha = Helpers::get_business_settings('recaptcha');
         if (isset($recaptcha) && $recaptcha['status'] == 1) {
@@ -841,7 +842,7 @@ class WebController extends Controller
             }
         }
         // dd($request->all());
-        
+
         $contact = new Contact;
         $contact->name = $request->name;
         $contact->email = $request->email;

@@ -213,7 +213,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.'], fu
 
             // New route to add seller from dashboard
             Route::get('seller-add', 'SellerController@add')->name('seller-add');
-            
+
             Route::get('order-list/{seller_id}', 'SellerController@order_list')->name('order-list');
             Route::get('product-list/{seller_id}', 'SellerController@product_list')->name('product-list');
 

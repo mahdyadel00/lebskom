@@ -2,7 +2,7 @@
 <div class="navbar-tool dropdown {{Session::get('direction') === "rtl" ? 'mr-3' : 'ml-3'}}"
      style="margin-{{Session::get('direction') === "rtl" ? 'left' : 'right'}}: 6px">
     <a style="background-color: transparent !important;" class="navbar-tool-icon-box bg-secondary dropdown-toggle" href="{{route('shop-cart')}}">
-    @php($cart=\App\CPU\CartManager::get_cart())    
+    @php($cart=\App\CPU\CartManager::get_cart())
     @if($cart->count() > 0)
         <span style="background-color: #403b3b !important;" class="navbar-tool-label">
             @php($cart=\App\CPU\CartManager::get_cart())
