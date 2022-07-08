@@ -79,6 +79,7 @@
                     @endif
 
                 </div>
-                {{--  <span class="padge">New</span>  --}}
+
+                <li class="disable">( {{ $product->reviews_count }} )</li>
             </div>
         </div>
