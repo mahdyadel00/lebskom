@@ -5,8 +5,6 @@
 @section('content')
 
 
- </div>
-</div>
 @include('layouts.front-end.partials._modals')
 @include('layouts.front-end.partials._quick-view-modal')
 <div class="content-home-page">
