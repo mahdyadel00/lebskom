@@ -35,5 +35,3 @@
     </section>
 @endif
 @endsection
-
-{
