@@ -460,7 +460,7 @@
                   <img class="cz-image-zoom img-responsive"
                     onerror="this.src='{{ asset('public/assets/front-end/img/image-place-holder.png') }}'"
                     src="https://ik.imagekit.io/lebskom/{{ $photo }}"
-                    data-zoom="https://ik.imagekit.io/lebskom/{{ $photo }}" alt="Product image" width="">
+                    {{--  data-zoom="https://ik.imagekit.io/lebskom/{{ $photo }}" alt="Product image" width="">  --}}
                   <div class="cz-image-zoom-pane"></div>
                 </div>
               @endforeach

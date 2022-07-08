@@ -3,16 +3,52 @@
 @section('title', ucfirst($data['data_from']) . ' products')
 @section('content')
 
-@include('layouts.front-end.partials._modals')
-{{--  @include('layouts.front-end.partials._toolbar')  --}}
-<div class="row">
-    <div class="col-12">
-        <a href="#" class="item">
-            <img class="img-fluid" src="{{ asset('assets/front-end') }}/images/content-home-page/0.png"
-                alt="0 Content Home Page">
-        </a>
+    <div class="navbar navbar-expand-md navbar-stuck-menu" style="display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-content: center;
+          justify-content: flex-start;
+          align-items: center;
+          background-color: white;
+          box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+          padding: 0px 15px;">
+
+        @if ($menu->childes->count() > 0)
+            @foreach ($menu['childes'] as $subCategory)
+                <ul class="navbar-nav mobile_nav">
+                    <li class="nav-item dropdown active">
+
+                        <div class="catmenu dropdown">
+                            <div style="cursor:pointer; white-space: nowrap;color: black !important; font-weight: bold;"
+                                 class="nav-link dropdown-item flex-between" <?php if ($subCategory->childes->count() > 0) {
+                                echo "data-toggle='dropdown'";
+                            } ?>>
+                                {{ $subCategory->name }}
+                            </div>
+
+                            @if ($subCategory->childes->count() > 0)
+                                <div class="dropdown-menu" style="position:absolute;" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="javascript:"
+                                       onclick="location.href='{{ route('products', ['id' => $subCategory['id'], 'data_from' => 'category', 'page' => 1]) }}'"><span
+                                            class="childmenuMain">{{ $subCategory->name }} (ALL)</span></a>
+                                    @foreach ($subCategory['childes'] as $subSubCategory)
+                                        <a class="dropdown-item"
+                                           href="{{ route('products', ['id' => $subSubCategory['id'], 'data_from' => 'category', 'page' => 1]) }}"><span
+                                                class="childmenu">{{ $subSubCategory['name'] }}</span></a>
+                                    @endforeach
+                                </div>
+                            @endif
+
+
+                        </div>
+                    </li>
+                </ul>
+            @endforeach
+        @endif
+
     </div>
-</div>
+
+    @include('layouts.front-end.partials._modals')
 
     @if (count($featured_products) > 0)
         <section class="container rtl">

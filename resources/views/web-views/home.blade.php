@@ -6,7 +6,7 @@
 
 
     @include('layouts.front-end.partials._modals')
-    @include('layouts.front-end.partials._quick-view-modal')
+    {{--  @include('layouts.front-end.partials._quick-view-modal')  --}}
     <div class="content-home-page">
         <div class="container">
             <div class="row">
@@ -45,7 +45,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
+            <div class="row">كل سنه وانت طيب ياحبيبي وبعوده الايام كده يارب عليك وعلينا بالخير والسعاده
                 <div class="col-12">
                     <a href="#" class="item">
                         <img class="img-fluid" src="{{ asset('assets/front-end') }}/images/content-home-page/5.png"
