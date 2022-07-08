@@ -20,7 +20,6 @@
                 </a>
             </div>
         </div>
-       {{--<hr class="view_border">--}}
          <!-- Grid-->
         <div class="row mt-2 mb-3">
             @foreach($featured_products as $product)
