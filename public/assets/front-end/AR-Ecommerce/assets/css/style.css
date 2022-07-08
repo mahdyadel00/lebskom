@@ -278,7 +278,7 @@ p {
 	margin-bottom: 30px;
 }
 .category .item img{
-    border-radius: 50%;
+    border-radius: 0%;
 }
 .category .item h4{
     font-size: 16px;
