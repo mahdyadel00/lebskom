@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Brand;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 
@@ -24,6 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $brands = Brand::take(3)->get();
+        return view('home' , compact('brands'));
     }
 }
